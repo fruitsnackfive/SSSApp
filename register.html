@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+	<style>
+	body{background-color: green}
+	form{color: white}
+	</style>
+
+</head>
+
+<body data-theme="a">
+	<div data-role="page" data-theme="b">
+
+		<div data-role="header">
+			<h1>Registration</h1>
+		</div>
+
+		<div data-role="content">
+		<h6>* = mandatory
+<form action="register.php" method="post">
+	*Email: <input type="text" name="email"><br>
+	*Password: <input type="text" name="password"><br>
+	*Re-type Password: <input type="text" name="password2"><br>
+	<p>Credit Card Information (optional)</p>
+	Card Number: <input type="text" name="cardNum"><br>
+	Expiration Date: <input type="text" name="expDate"><br>
+	Security Code: <input type="text" name="secCode"><br>
+	Card Owner: <input type="text" name="cardOwner"><br>
+	<input type="submit" value="Submit">
+</form>
+		</div>
+
+	</div>
+</body>
+</html>

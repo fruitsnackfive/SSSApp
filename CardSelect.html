@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card Selection</title>
+	<style>
+	body{background-color: green}
+	form{color: white}
+	</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+</head>
+
+<body data-theme="a">
+	<div data-role="page" data-theme="b">
+
+		<div data-role="header">
+			<h1>Card Selection</h1>
+		</div>
+<h3>Please select the card that you will be using.</h3>
+		<div data-role="content">
+	<select name="cardlist" form="cardform">
+ 	<option value="card1">Name of card1</option>
+ 	<option value="card2">Name of card2</option>
+ 	<option value="card3">Name of card3</option>
+ 	<option value="card4">Name of card4</option>
+ </select><br>
+ <br>
+ <a href="addCard.html" data-role="button" data-icon="arrow-u">Add a new card</a>
+ <br>
+ <h3>Please enter the amount that you will be betting.</h3>
+ <audio controls>
+ 	<source src="Cha_Ching_Register-Muska666-173262285.mp3" type="audio/mpeg">
+ 	</audio>
+ 	<form action="amount.php" method="post">
+		<span style="color:yellow; font-size: 71px">$$</span> Amount <span style="color:yellow; font-size: 71px">$$</span>: <input type="text" name="betAmt"><br><br>
+	<input type="submit" value="Submit">
+
+	</div>
+</body>
+</html>

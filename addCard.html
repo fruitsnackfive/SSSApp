@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Card</title>
+	<style>
+	body{background-color: green}
+	form{color: white}
+	</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+</head>
+
+<body data-theme="a">
+	<div data-role="page" data-theme="b">
+
+		<div data-role="header">
+			<h1>Add a Card</h1>
+		</div>
+
+		<div data-role="content">
+			<h3>Enter the information for the new card</h3>
+			<form action="cardInfo.php" method="post">
+				Card Number: <input type="text" name="cardNum"><br>
+				Expiration Date: <input type="text" name="expDate"><br>
+				Security Code: <input type="text" name="secCode"><br>
+				Card Owner: <input type="text" name="cardOwner"><br>
+				<input type="submit" value="Submit">
+	</div>
+</body>
+</html>

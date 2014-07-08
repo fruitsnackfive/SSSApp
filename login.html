@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body{background-color:green;}
+form{color:white;}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="jquerymobilelocal/jquery.mobile-1.4.3.min.css" />
+<script src="jquerymobilelocal/jquery-1.11.1.min.js"></script>
+<script src="jquerymobilelocal/jquery.mobile-1.4.3.min.js"></script>
+
+</head>
+
+<body>
+	<div data-role="page" data-theme="a">
+
+		<div data-role="header">
+			<h1>Login</h1>
+		</div>
+
+		<div data-role="content">
+	<form action="loginenter.php" method="post">
+	Email: <input type="text" name="email"><br>
+	Password: <input type="text" name="password"><br>
+	<input type="submit" value="Submit">
+	</form>
+			
+			<div>
+				<br>
+				<a href="register.html" data-role="button" data-icon="arrow-u">Click here to register</a> 
+			</div>
+
+	</div>
+</body>
+</html>
