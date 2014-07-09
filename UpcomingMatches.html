@@ -27,7 +27,16 @@
 							<a href="#selectcard" data-rel="popup">200,000</a>
 								<div data-role="popup" data-transition="pop"id="selectcard"> 
 								<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-								<h3>Checkout through DogeCoin</h3>
+								<h3>Checkout with DogeCoin</h3>
+										<div data-role="content">
+											<form action="Checkout.php" method="post">
+												<center>DGC Payout Address<br></center>
+												<input type="text" name="payoutaddress"><br>
+												<center>Bet<br></center>
+												<input type="text" name="ammount"><br>
+												<input type="submit" value="submit" href="/checkout?payment_address=DMxgDVRQp3EeQEbexB1Av2UqBWpso9WxK6&amount_doge=1000&widget_type=donation"><br>
+											</form>
+										</div>
 										<div class='doge-widget-wrapper'>
 											<form method='get' action='https://www.dogeapi.com/checkout'>
 												<input type="hidden" name="animation_type" value="checkout">
