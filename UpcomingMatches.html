@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Upcoming Mathches</title>
-	<style>
-	body{background-color: green}
-	form{color: white}
-	</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+<script src='https://www.dogeapi.com/widget/dogeapi.js' type='text/javascript'></script>
 
 </head>
 
@@ -22,21 +18,48 @@
 		</div>
 
 		<div data-role="content">
-	<table border="2">
-		<tr>
-			<th>Date</th>
-			<th>Upcoming Matches</th>
-		</tr>
-		<tr>
-			<td>14th</td>
-			<td><a href="GerVsPort.html" data-role="button" data-icon="arrow-u">Germany Vs. Portugal</a></td>
-		</tr>
-		<tr>
-			<td>15th</td>
-			<td><a href="NethVsBraz.html" data-role="button" data-icon="arrow-u">Netherlands Vs. Brazil</a></td>
-		</tr>
-	</table>
-		</div>
+	<ul data-role="listview" data-filter="true" data-filter-placeholder="Search">
+		<li>
+			<div data-role="collapsible">
+				<h3>Mail Attacks</h3>
+					<ul data-role="listview">
+						<li>
+							<a href="#selectcard" data-rel="popup">200,000</a>
+								<div data-role="popup" data-transition="pop"id="selectcard"> 
+								<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+								<h3>Checkout through DogeCoin</h3>
+										<div class='doge-widget-wrapper'>
+											<form method='get' action='https://www.dogeapi.com/checkout'>
+												<input type="hidden" name="animation_type" value="checkout">
+												<input type='hidden' name="checkout_label" value="Bet">
+												<input type='hidden' name='widget_type' value='pay'>
+												<input type='hidden' name='widget_key' value='hrb02g1pupse81tre9m2188syoe'>
+												<input type='hidden' name='new_address' value='Bet'>
+												<div class='doge-widget' style='display:none;'></div>
+											</form>
+										</div>
+									<div data-role="content">
+											<form action="chaeckout.php" method="post">
+
+									<div data-role="button"></div>
+								</div>
+						</li>
+						<li>
+							<a href="#selectcard" data-rel="popup">250,000</a>
+							<div data-role="popup" id="selectcard"> 
+							<p> something</p>
+							</div>
+						</li>
+						<li>
+							<a href="#selectcard" data-rel="popup">200,000</a>
+							<div data-role="popup" id="selectcard"> 
+							<p> something</p>
+							</div>
+						</li>
+					</ul>
+			</div>
+		</li>
+	</ul>
 		
 
 	</div>
