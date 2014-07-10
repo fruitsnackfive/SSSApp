@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BetBugs</title>
 
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -10,14 +11,36 @@
 
 </head>
 
-<body data-theme="a">
-	<div data-role="page" data-theme="b">
-
+<body>
+	<div data-role="page" name="login" data-title="login" data-theme="b">
 		<div data-role="header">
-			<h1>Choose a bet</h1>
+			<h1>Login</h1>
 		</div>
 
 		<div data-role="content">
+	<form action="loginenter.php" method="post">
+	<center>Email</center> <br>
+	<input type="text" name="email"><br>
+	<center>Password</center> <br>
+	<input type="password" name="password"><br>
+	<input type="submit" value="Log In"><br>
+	</form>
+			
+			<div>
+				<a href="#register" data-role="button" data-theme="a" data-icon="arrow-r">Register</a> 
+			</div>
+
+		</div>
+		<form >
+	</div>
+
+
+<div data-role="page" id="betting" data-title="Betting">
+	<div data-role="header">
+		<a href="#account">Account</a>
+		<h1>Choose a bet</h1>
+	</div>
+
 	<ul data-role="listview" data-filter="true" data-filter-placeholder="Search">
 		<li>
 			<div data-role="collapsible">
@@ -34,7 +57,7 @@
 												<input type="text" name="payoutaddress"><br>
 												<center>Bet<br></center>
 												<input type="text" name="ammount"><br>
-												<input type="submit" value="submit" href="/checkout?payment_address=DMxgDVRQp3EeQEbexB1Av2UqBWpso9WxK6&amount_doge=1000&widget_type=donation"><br>
+												<input type="submit" value="submit"><br>
 											</form>
 										</div>
 										<div class='doge-widget-wrapper'>
@@ -69,8 +92,18 @@
 			</div>
 		</li>
 	</ul>
-		
+</div>
 
-	</div>
+<div data-role="page" id="register" data-theme="b">
+	<form action="register.php" method="post">
+		<center>Email <input type="text" name="email"><br>
+		Password <input type="text" name="password"><br>
+		Re-type Password <input type="text" name="password2"><br>
+		Doge address <input type="text" name="dogeaddress"><br>
+		</center>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
 </body>
 </html>
